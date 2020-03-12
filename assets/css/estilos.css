@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.mensaje{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+/*--------------header---------*/
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(112, 183, 241);
+}
+header .inicio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(24, 23, 23);
+}
+header .logo{
+    width: 3.5em;
+}
+header .inicio h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 1em;
+}
+
+header .botones{
+    justify-self: end;
+}
+header .botonInicio{
+    font-size: 1.4em;
+    padding: .7em;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color .5s ease 0s;
+}
+header .botonInicio:hover{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    background-color: rgb(78, 147, 204);
+}
+/*-----------Footer---------------*/
+footer{
+    width: 100%;
+    background-color: rgb(112, 183, 241);
+    text-align: center;
+    margin-top: 10.9em;
+    padding: 2em 0;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+}
+/*_---------Media queries--------*/

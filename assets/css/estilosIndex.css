@@ -1,0 +1,53 @@
+.bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em;
+}
+/*--------------bloque de presentacion-------------*/
+.bienvenida .presentacion{
+    font-size: 1.5em;
+    padding: 1em;
+    text-align: center;
+}
+.bienvenida .logo{
+    width: 200px;
+}
+/*------------formulario de inicio------------------*/
+.formInicio{
+    margin: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;   
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario *{
+    font-size: 1.5em;
+    padding: .5em;
+    margin: .6em;
+}
+.formulario p.mensaje{
+    font-size: 1em;
+    padding: 0em;
+    margin: 0em;
+    color: red;
+}
+.formulario input{
+    outline: none;
+}
+.formulario button{
+    background-color: rgb(112, 183, 241);
+    cursor: pointer;
+    border: none;
+}
+.formulario button:hover{
+    background-color: rgb(78, 147, 204);
+    box-shadow: 1px 1px black;
+}
+/*---------footer---------------*/
+footer{
+    margin-top: 14.9em;
+}

@@ -1,0 +1,252 @@
+.tituloInicio{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/*-------------main----------------*/
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1em;
+    margin: 1em;
+}
+main .perfil{
+    width: 20%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: rgb(245, 245, 245);
+}
+main .perfil .imagenPerfil{
+    width: 150px;
+}
+main .perfil p{
+    margin: 0;
+    padding: .1em;
+}
+.centrado{
+    align-self: center;
+    color: rgb(78, 179, 78);
+}
+.punto{
+    font-size: bold;
+    animation: cambioColor 2s ease 0s infinite;
+}
+@keyframes cambioColor{
+    from{color: rgb(110, 240, 110); }
+    to{  color: rgb(37, 87, 37); }
+}
+#editar{
+    cursor: pointer;
+    padding: 1em 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(26, 110, 26);
+}
+#editar:hover{
+    background-color: rgb(41, 161, 41);
+}
+#cambiarDatos{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(8, 8, 8, 0.726);
+    animation: mostrar 1s ease 0s;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+#cambiarDatos h2{
+    background-color: rgb(112, 183, 241);
+    margin: 0 0 .5em 0;
+    padding: 1em 0;
+    width: 100%;
+}
+#cambiarDatos *{
+    display: inline-block;
+    margin: 0;
+}
+#cambiarDatos input{
+    width: 70%;
+    padding: .6em;
+    margin: .2em 0;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.ButtonEnviarEditar{
+    cursor: pointer;
+    width: 68.6%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: .6em;
+    margin: .4em 0 0 .2em 0;
+    outline: none;
+    border: none;
+    background-color: rgb(26, 110, 26);
+}
+.ButtonEnviarEditar:hover{
+    background-color: rgb(41, 161, 41);
+}
+#cambiarDatos .buttonCancelarEditar{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 1em;
+    padding: .6em;
+    font-weight: bold;
+    width: 68.6%;
+    background-color: rgb(143, 17, 17);
+}
+#cambiarDatos .buttonCancelarEditar:hover{
+    background-color: rgb(231, 25, 25);
+}
+#aparecer{
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgb(143, 17, 17);
+    cursor: help;
+}
+#aparecer:hover{
+    background-color: rgb(231, 25, 25);
+}
+.buttonAlert{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1em 0;
+    font-weight: bolder;
+    background-color: rgb(143, 17, 17);
+    color: black;
+    cursor: help;
+    text-align: center;
+    padding: 1em 0;
+}
+.buttonAlert:hover{
+    background-color: rgb(231, 25, 25);
+}
+.bloqueDeConfirmacion{
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20em;
+    height: 14em;
+    background-color: rgba(8, 8, 8, 0.726);
+    animation: mostrar 1s ease 0s;
+}
+@keyframes mostrar{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bloqueDeConfirmacion:not(h2){
+    color: white;
+}
+.bloqueDeConfirmacion .buttonCancelar{
+    background-color: rgba(8, 8, 8, 0.726);
+    padding: 1em 0;
+    cursor: pointer;
+}
+.buttonCancelar:hover{
+    background-color: rgba(59, 55, 55, 0.726);
+}
+
+/*--------------MAIN ARTICULOS-------------*/
+main .articulos{
+    width: 73%;
+    padding: 1em;
+    background-color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main section.articulos #articulosEscritos{
+    background-color: rgb(215, 233, 248);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
+main section.articulos #articulosEscritos h2#tituloArticulos{
+    display: inline;
+    color: rebeccapurple;
+}
+/*-----------------Cuadro de publicaciones---------------*/
+main .articulos .creadorArticulos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4em;
+}
+main .articulos .creadorArticulos *{
+    padding: .4em;
+}
+main .articulos .creadorArticulos *:focus{
+    font-weight: bold;
+}
+.creadorArticulos h3{
+    margin: 0;
+    padding: 0;
+}
+.creadorArticulos [name="titulo"]{
+    font-weight: bold;
+}
+.creadorArticulos .noCambiar [name="autor"], [name="fecha"]{
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+.creadorArticulos [name="contenido"]{
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+.creadorArticulos [name="publicar"]{
+    background-color: rgb(112, 183, 241);
+    cursor: pointer;
+    border: none;
+}
+/*---------------Articulos mostrados-----------------*/
+main article *{
+    margin: .2em;
+    padding: .2em;
+}
+/*-----------------NoIniciado-------------*/
+.NoIniciado{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 29.6em;
+}
+/*-----------------FOOTER-----------------*/
+footer{
+    margin-top: 0em;
+}
+/*--------------------Media queries------------*/
+@media(max-width:600px){
+    #cambiarDatos{
+        width: 100%;
+        height: 80%;
+    }
+}
